@@ -1,0 +1,23 @@
+{
+	"name": "php-actions/example-composer",
+	"description": "An example project that uses php-actions/composer",
+
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/php-actions/example-private-repo",
+			"options": {
+				"ssh2": {
+					"username": "git",
+					"pubkey_file": "./keys/deploy_rsa.pub",
+					"privkey_file": "./keys/deploy_rsa"
+				}
+			}
+		}
+	],
+
+	"require": {
+		"phpgt/webengine": "dev-master",
+		"php-actions/example-private-repo": "dev-master"
+	}
+}
