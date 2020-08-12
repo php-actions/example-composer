@@ -12,3 +12,4 @@ jobs:
         uses: php-actions/composer@private-repo-test
         with:
           ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
