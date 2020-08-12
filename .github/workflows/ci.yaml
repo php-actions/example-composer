@@ -24,4 +24,4 @@ jobs:
             IdentityFile ~/.ssh/example.key
             StrictHostKeyChecking no
           EOF
-      - uses: php-actions/composer@v2
+      - uses: php-actions/composer@private-repo-test
