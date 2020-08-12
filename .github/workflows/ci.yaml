@@ -14,7 +14,7 @@ jobs:
           SSH_KEY_PUB: ${{ secrets.SSH_KEY_PUB }}
         run: |
           cd ~
-          echo pwd
+          pwd
           exit
           mkdir -p ~/.ssh
           echo "$SSH_KEY" > ~/.ssh/example.key
