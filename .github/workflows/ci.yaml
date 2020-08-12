@@ -13,9 +13,12 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_KEY_PUB: ${{ secrets.SSH_KEY_PUB }}
         run: |
+          cd ~
+          echo pwd
+          exit
           mkdir -p ~/.ssh
-          echo "$SSH_KEY" > /root/.ssh/example.key
-          echo "$SSH_KEY_PUB" > /root/.ssh/example.pub
+          echo "$SSH_KEY" > ~/.ssh/example.key
+          echo "$SSH_KEY_PUB" > ~/.ssh/example.pub
           chmod 600 ~/.ssh/example.key
           cat >>~/.ssh/config <<EOF
           Host GitHub
