@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Copy example keys
-      - uses: php-actions/composer@private-repo-test
+      - name: Install dependencies
+        uses: php-actions/composer@private-repo-test
         with:
           ssh_key: ${{ secrets.SSH_KEY }}
