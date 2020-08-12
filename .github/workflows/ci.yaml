@@ -9,6 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Copy example keys
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_KEY_PUB: ${{ secrets.SSH_KEY_PUB }}
         run: |
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa && echo "${{ secrets.SSH_KEY_PUB }}" > ~/.ssh/id_rsa.pub
+          echo "$SSH_KEY" > ~/.ssh/id_rsa && echo "$SSH_KEY_PUB" > ~/.ssh/id_rsa.pub
       - uses: php-actions/composer@v2
