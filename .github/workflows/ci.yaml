@@ -9,20 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Copy example keys
-        env:
-          SSH_KEY: ${{ secrets.SSH_KEY }}
-          SSH_KEY_PUB: ${{ secrets.SSH_KEY_PUB }}
-        run: |
-          whoami
-          mkdir -p /home/runner/.ssh
-          echo "$SSH_KEY" > /home/runner/.ssh/example.key
-          echo "$SSH_KEY_PUB" > /home/runner/.ssh/example.pub
-          chmod 600 ~/.ssh/example.key
-          cat >>~/.ssh/config <<EOF
-          Host GitHub
-            HostName github.com
-            User git
-            IdentityFile /home/runner/.ssh/example.key
-            StrictHostKeyChecking no
-          EOF
       - uses: php-actions/composer@private-repo-test
+        with:
+          ssh_key: ${{ secrets.SSH_KEY }}
