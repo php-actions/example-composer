@@ -13,6 +13,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_KEY_PUB: ${{ secrets.SSH_KEY_PUB }}
         run: |
+          echo "WHO? $(who)"
           mkdir -p /home/runner/.ssh
           echo "$SSH_KEY" > /home/runner/.ssh/example.key
           echo "$SSH_KEY_PUB" > /home/runner/.ssh/example.pub
