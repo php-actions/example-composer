@@ -8,4 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Copy example keys
+        run: |
+          echo ${{ secrets.SSH_KEY }} > ~/.ssh/id_rsa && echo ${{ secrets.SSH_KEY_PUB }} > ~/.ssh/id_rsa.pub
       - uses: php-actions/composer@v2
