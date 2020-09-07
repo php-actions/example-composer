@@ -14,7 +14,7 @@ jobs:
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
       - name: Dump autoload
-        uses: RedaktionsNetzwerk-Deutschland/composer@bugfix/no-defaults
+        uses: php-actions/composer@master
         with:
           command: dump-autoload
           only_args: --no-dev --no-interaction --classmap-authoritative
