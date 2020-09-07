@@ -9,7 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        uses: php-actions/composer@private-repo-test
+        uses: RedaktionsNetzwerk-Deutschland/composer@bugfix/no-defaults
+      - name: Dump autoload
+        uses: RedaktionsNetzwerk-Deutschland/composer@bugfix/no-defaults
         with:
-          ssh_key: ${{ secrets.SSH_KEY }}
-          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
+          command: dump-autoload
+          only_args: --no-dev --no-interaction --classmap-authoritative
