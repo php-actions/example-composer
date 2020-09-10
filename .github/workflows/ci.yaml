@@ -9,12 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        uses: php-actions/composer@private-repo-test
+        uses: php-actions/composer@v2
         with:
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
       - name: Dump autoload
-        uses: php-actions/composer@master
+        uses: php-actions/composer@v2
         with:
           command: dump-autoload
           only_args: --no-dev --no-interaction --classmap-authoritative
