@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
+      - name: Validate dependencies
         uses: php-actions/composer@master
         with:
           command: validate
