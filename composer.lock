@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4413274d9c9e9dd81474cec87e81555",
+    "content-hash": "107e9a785b7d40a80a1c3364f9d6cf56",
     "packages": [
         {
             "name": "composer/semver",
-            "version": "1.5.1",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de"
+                "reference": "38276325bd896f90dfcfe30029aa5db40df387a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
+                "url": "https://api.github.com/repos/composer/semver/zipball/38276325bd896f90dfcfe30029aa5db40df387a7",
+                "reference": "38276325bd896f90dfcfe30029aa5db40df387a7",
                 "shasum": ""
             },
             "require": {
@@ -65,27 +65,27 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2020-01-13T12:06:48+00:00"
+            "time": "2020-09-27T13:13:07+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "72b6fbf76adb3cf5bc0db68559b33d41219aba27"
+                "reference": "65b2d8ee1f10915efb3b55597da3404f096acba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/72b6fbf76adb3cf5bc0db68559b33d41219aba27",
-                "reference": "72b6fbf76adb3cf5bc0db68559b33d41219aba27",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/65b2d8ee1f10915efb3b55597da3404f096acba2",
+                "reference": "65b2d8ee1f10915efb3b55597da3404f096acba2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.0|^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.4|^7.0"
+                "phpunit/phpunit": "^6.4|^7.0|^8.0|^9.0"
             },
             "type": "library",
             "extra": {
@@ -119,7 +119,7 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2019-03-31T00:38:28+00:00"
+            "time": "2020-10-13T00:52:37+00:00"
         },
         {
             "name": "magicalex/write-ini-file",
@@ -727,16 +727,16 @@
         },
         {
             "name": "phpgt/dom",
-            "version": "v2.1.6",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhpGt/Dom.git",
-                "reference": "fceb86cdb32e846178f75b7f9806d2b77635a879"
+                "reference": "26eb98925f1d5c8d39e4ddc7e2691ec63d0a99f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhpGt/Dom/zipball/fceb86cdb32e846178f75b7f9806d2b77635a879",
-                "reference": "fceb86cdb32e846178f75b7f9806d2b77635a879",
+                "url": "https://api.github.com/repos/PhpGt/Dom/zipball/26eb98925f1d5c8d39e4ddc7e2691ec63d0a99f5",
+                "reference": "26eb98925f1d5c8d39e4ddc7e2691ec63d0a99f5",
                 "shasum": ""
             },
             "require": {
@@ -748,7 +748,7 @@
                 "psr/http-message": "1.*"
             },
             "require-dev": {
-                "phpunit/phpunit": "8.*"
+                "phpunit/phpunit": "9.*"
             },
             "type": "library",
             "autoload": {
@@ -804,29 +804,29 @@
                 }
             ],
             "description": "The modern DOM API for PHP 7 projects.",
-            "time": "2020-01-15T08:28:10+00:00"
+            "time": "2020-09-01T11:06:01+00:00"
         },
         {
             "name": "phpgt/domtemplate",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhpGt/DomTemplate.git",
-                "reference": "151ed5fe3ff0cc4aa0229bc3575cebcf05da8cfd"
+                "reference": "f0f8209120d683444bc5855896003f7e20fe71e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhpGt/DomTemplate/zipball/151ed5fe3ff0cc4aa0229bc3575cebcf05da8cfd",
-                "reference": "151ed5fe3ff0cc4aa0229bc3575cebcf05da8cfd",
+                "url": "https://api.github.com/repos/PhpGt/DomTemplate/zipball/f0f8209120d683444bc5855896003f7e20fe71e1",
+                "reference": "f0f8209120d683444bc5855896003f7e20fe71e1",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
-                "phpgt/dom": "*"
+                "phpgt/dom": "2.*"
             },
             "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "8.*"
+                "phpstan/phpstan": "0.12.*",
+                "phpunit/phpunit": "9.*"
             },
             "type": "library",
             "autoload": {
@@ -839,7 +839,7 @@
                 "MIT"
             ],
             "description": "Bind dynamic data to reusable HTML components.",
-            "time": "2020-05-24T19:43:38+00:00"
+            "time": "2020-09-14T08:51:28+00:00"
         },
         {
             "name": "phpgt/fetch",
@@ -1124,12 +1124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhpGt/WebEngine.git",
-                "reference": "ee8ef8762e2b39e816170db70b91e915153eaa1e"
+                "reference": "3136600464dfd35d954bd57d4730efcb2696efaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhpGt/WebEngine/zipball/ee8ef8762e2b39e816170db70b91e915153eaa1e",
-                "reference": "ee8ef8762e2b39e816170db70b91e915153eaa1e",
+                "url": "https://api.github.com/repos/PhpGt/WebEngine/zipball/3136600464dfd35d954bd57d4730efcb2696efaa",
+                "reference": "3136600464dfd35d954bd57d4730efcb2696efaa",
                 "shasum": ""
             },
             "require": {
@@ -1185,7 +1185,7 @@
                 "webengine",
                 "webservice"
             ],
-            "time": "2020-07-26T11:14:56+00:00"
+            "time": "2020-09-15T08:40:15+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1482,20 +1482,20 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.18.1",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
-                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -1503,7 +1503,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1540,7 +1540,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "webmozart/assert",

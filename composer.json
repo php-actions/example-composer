@@ -2,6 +2,13 @@
 	"name": "php-actions/example-composer",
 	"description": "An example project that uses php-actions/composer",
 
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/php-actions/example-private-repo"
+		}
+	],
+
 	"require": {
 		"phpgt/webengine": "dev-master",
 		"php-actions/example-private-repo": "dev-master"
