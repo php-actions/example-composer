@@ -8,4 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: php-actions/composer@dynamic-docker
+      - name: Install dependencies
+        uses: php-actions/composer@dynamic-docker
+        with:
+          ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
