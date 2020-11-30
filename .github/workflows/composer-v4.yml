@@ -1,0 +1,17 @@
+name: CI-Composer-v4
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        uses: php-actions/composer@dynamic-docker
+        with:
+          composer_version: 1
+          ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
