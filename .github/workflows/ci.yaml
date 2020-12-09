@@ -12,6 +12,7 @@ jobs:
       - name: Install dependencies
         uses: php-actions/composer@dynamic-docker-debug
         with:
+          php_version: 7.4
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
           ghcr_token: ${{ secrets.GHCR_TOKEN }}
