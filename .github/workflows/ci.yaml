@@ -15,5 +15,3 @@ jobs:
           php_version: 7.4
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
-          ghcr_token: ${{ secrets.GHCR_TOKEN }}
-          ghcr_user: ${{ secrets.GHCR_USER }}
