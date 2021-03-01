@@ -16,4 +16,4 @@ jobs:
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
         env:
-          COMPOSER_DEBUG_EVENTS: 1
+          COMPOSER_MEMORY_LIMIT: 1M
