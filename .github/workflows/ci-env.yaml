@@ -1,4 +1,10 @@
 name: CI-environment-variables
+# This tests whether environment variables are loaded correctly within the
+# Docker container. The example sets the COMPOSER_PROCESS_TIMEOUT variable
+# (which has a default of 300), and changes the command to "config" with args
+# "process-timeout", which will show the value of the associated config setting.defaults:
+# If the environment variables are loaded, the script should output 1. If they
+# are ignored, it should output 300.
 
 on: [push]
 
