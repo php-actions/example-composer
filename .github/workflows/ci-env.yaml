@@ -1,4 +1,4 @@
-name: CI
+name: CI-environment-variables
 
 on: [push]
 
@@ -15,3 +15,5 @@ jobs:
           php_version: 8.0
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
+        env:
+          COMPOSER_DEBUG_EVENTS: 1
