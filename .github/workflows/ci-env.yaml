@@ -15,5 +15,7 @@ jobs:
           php_version: 8.0
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
+          command: config
+          args: process-timeout
         env:
-          COMPOSER_MEMORY_LIMIT: 1M
+          COMPOSER_PROCESS_TIMEOUT: 1
