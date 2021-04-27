@@ -1,4 +1,4 @@
-name: CI
+name: CI-show-output-log
 
 on: [push]
 
