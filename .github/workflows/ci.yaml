@@ -22,4 +22,4 @@ jobs:
           path: output.log
           
       - name: Check the content of the output log
-        run: cat output.log
+        run: pwd && cat output.log
