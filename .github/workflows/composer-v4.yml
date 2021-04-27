@@ -13,5 +13,6 @@ jobs:
         uses: php-actions/composer@v4
         with:
           composer_version: 1
+          php_version: 8.0
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
