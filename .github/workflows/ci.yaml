@@ -20,6 +20,3 @@ jobs:
         with:
           name: debug-output
           path: output.log
-          
-      - name: Check the content of the output log
-        run: pwd && cat output.log
