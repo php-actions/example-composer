@@ -1,0 +1,25 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        uses: php-actions/composer@v5
+        with:
+          php_version: 8.0
+          ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: debug-output
+          path: output.log
+          
+      - name: Check the content of the output log
+        run: cat /home/runner/work/example-composer/example-composer/output.log
