@@ -25,3 +25,4 @@ jobs:
           args: process-timeout
         env:
           COMPOSER_PROCESS_TIMEOUT: 1
+          EXAMPLE_ENVIRONMENT_VARIABLE: "This tests issue php-actions/composer#40"
