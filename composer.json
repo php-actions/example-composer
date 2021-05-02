@@ -21,8 +21,6 @@
 	},
 
 	"scripts": {
-		"post-install-cmd": [
-			"ExampleComposer\\Debug::inspectEnvironmentVariables"
-		]
+		"env-test": "ExampleComposer\\Debug::inspectEnvironmentVariables"
 	}
 }
