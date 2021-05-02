@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Show environment variables
         uses: php-actions/composer@v5
         with:
           php_version: 8.0
@@ -23,11 +23,6 @@ jobs:
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
           command: run-script
           args: env-test
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: debug-output
-          path: output.log
 
         env:
           EXAMPLE_ENVIRONMENT_VARIABLE: "This tests issue php-actions/composer#40"
