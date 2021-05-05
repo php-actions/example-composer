@@ -12,5 +12,15 @@
 	"require": {
 		"phpgt/webengine": "3.*",
 		"php-actions/example-private-repo": "dev-master"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"ExampleComposer\\": "./src"
+		}
+	},
+
+	"scripts": {
+		"env-test": "ExampleComposer\\Debug::inspectEnvironmentVariables"
 	}
 }

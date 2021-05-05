@@ -15,13 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Show environment variables
         uses: php-actions/composer@40-env
         with:
           php_version: 8.0
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
-          command: config
-          args: process-timeout
+          command: run-script
+          args: env-test
+
         env:
-          COMPOSER_PROCESS_TIMEOUT: 1
+          EXAMPLE_ENVIRONMENT_VARIABLE: "This tests issue php-actions/composer#40"
