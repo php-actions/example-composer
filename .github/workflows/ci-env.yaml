@@ -26,3 +26,4 @@ jobs:
 
         env:
           EXAMPLE_ENVIRONMENT_VARIABLE: "This tests issue php-actions/composer#40"
+          ANOTHER_EXAMPLE: "Here is another value"
