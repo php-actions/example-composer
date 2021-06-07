@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Dump autoload
-        uses: php-actions/composer@40-env
+        uses: php-actions/composer@master
         with:
           command: dump-autoload
           only_args: --no-dev --no-interaction --classmap-authoritative
