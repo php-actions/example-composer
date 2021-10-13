@@ -10,7 +10,7 @@
 	],
 
 	"require": {
-		"phpgt/webengine": "3.*",
+		"phpgt/webengine": "v4.x-dev",
 		"php-actions/example-private-repo": "dev-master"
 	},
 
