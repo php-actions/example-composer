@@ -12,6 +12,6 @@ jobs:
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
-          php_version: 8.1
+          php_version: '8.1'
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
