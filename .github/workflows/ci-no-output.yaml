@@ -15,8 +15,3 @@ jobs:
           php_version: 8.1
           ssh_key: ${{ secrets.SSH_KEY }}
           ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: debug-output
-          path: output.log
