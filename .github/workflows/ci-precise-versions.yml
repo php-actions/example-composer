@@ -1,0 +1,15 @@
+name: precise-versions
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Test precise versions
+        uses: php-actions/composer@87-precise-versions
+        with:
+          only_args: --version
