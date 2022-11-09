@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install dependencies
-        uses: php-actions/composer@92-set-output
+        uses: php-actions/composer@master
         with:
           php_version: 8.1
           ssh_key: ${{ secrets.SSH_KEY }}
@@ -23,6 +23,3 @@ jobs:
 
       - name: Check the content of the output log
         run: cat /home/runner/work/example-composer/example-composer/output.log
-
-      - name: Test what output is
-        run: echo "Output is $GITHUB_OUTPUT" && cat $GITHUB_OUTPUT
