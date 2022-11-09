@@ -25,4 +25,4 @@ jobs:
         run: cat /home/runner/work/example-composer/example-composer/output.log
 
       - name: Test what output is
-        run: echo "Output is $GITHUB_OUTPUT"
+        run: echo "Output is $GITHUB_OUTPUT" && cat $GITHUB_OUTPUT
