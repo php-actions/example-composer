@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install dependencies
-        uses: php-actions/composer@dev-bluecadet
+        uses: php-actions/composer@bluecadet
 
         with:
           php_version: '8.1'
