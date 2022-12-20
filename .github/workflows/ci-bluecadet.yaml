@@ -1,0 +1,23 @@
+name: CI-patch
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        uses: php-actions/composer@dev-bluecadet
+
+        with:
+          php_version: '8.1'
+          ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: debug-output
+          path: output.log
